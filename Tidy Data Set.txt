@@ -1,4 +1,4 @@
-"Sj_Id" "Activity" "Feature" "Value"
+"SjId" "Activity" "Feature" "Value"
 1 "WALKING" "tBodyAcc_mean_X" 0.278574076603774
 1 "WALKING" "tBodyAcc_mean_Y" -0.017022351190566
 1 "WALKING" "tBodyAcc_mean_Z" -0.109057512132075

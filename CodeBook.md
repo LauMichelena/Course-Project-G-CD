@@ -1,5 +1,3 @@
-<p><markdown>
-#Markdown Live Editor#
 **Experimental design and background:**
 ---------------------------------------
 
@@ -134,4 +132,3 @@ For each of this 9 measures it inlcudes one mean and one standard deviation. Mea
   [3]: http://i57.tinypic.com/zn1m5v.png
   [4]: http://i61.tinypic.com/2urxwrb.png
   [5]: http://i60.tinypic.com/2ijj7uo.png
-</markdown></p>

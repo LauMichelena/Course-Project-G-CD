@@ -124,6 +124,11 @@ For each of this 9 measures it inlcudes one mean and one standard deviation. Mea
  - fBodyGyroMag:Magnitude of these three-dimensional signals were calculated using the Euclidean norm  
  - fBodyGyroJerkMag: Magnitude of these three-dimensional signals were calculated using the Euclidean norm 
 
+
+
+
+*Value*: value associated with the given feature, a numeric vector from -1 to +1
+
 **
 
 

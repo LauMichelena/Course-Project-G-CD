@@ -3,4 +3,20 @@ Course-Project-G-CD
 
 Course Project for Getting and Cleaning Data (Coursera's course)¨
 
+**CodeBook.md**
 
+It explains in general how the data was treated and why some desitions where made. How to go fro the raw data to the proccessed data and finally to de tidy data set. It has:
+
+ - Experimental design and background
+ - Packages needed to run the code properly
+ - A description of the Raw data
+ - A general description of the steps to create a Processed data along with pictures of the results.
+ - Variable Codes of the final tidy data set
+
+**run_analysis.R**
+
+This script contains the code and detailed explanation of every step on the way from the raw data to the tidy data set.
+To run the code  all you need to do is select all the information on the script and the click the ¨Run¨buttom.
+
+**Tidy Data Set.txt**
+This is the final output from the step 5 of the code. It contains a tidy data set as described in the instructions. For explanation of what the variables are and how they are measured, read de CodeBook.md

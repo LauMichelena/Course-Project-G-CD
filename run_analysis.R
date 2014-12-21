@@ -25,7 +25,7 @@
 #me, please reffer to the CodeBook.md
         #add the names of the first two columns
         names<- as.character(columns$V2)
-        names <-c("Sj_Id", "Activity", names)
+        names <-c("SjId", "Activity", names)
         #Replace () and create better labels
         names<-make.names(names, unique=TRUE)
         names<-sub("...","_",names, fixed=TRUE)
@@ -42,8 +42,8 @@
 
 # Step 3: Uses descriptive activity names to name the activities in the data set
         dat$Activity<- factor(dat$Activity,
-                              levels=c("1","2","3","4","5","6"), 
-                              label=c("WALKING","WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING", "STANDING", "LAYING"))
+                            levels=c("1","2","3","4","5","6"), 
+                            label=c("WALKING","WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING", "STANDING", "LAYING"))
         
 # Step 5: From the data set in step 4, creates a second, independent tidy data set 
 #with the average of each variable for each activity and each subject.
@@ -54,9 +54,10 @@
         #feature. 
         library(dplyr)
         datMelt<- tbl_df(datMelt)
-        datMelt$Sj_Id <- as.numeric(datMelt$Sj_Id)
-        dato<-group_by (datMelt, Sj_Id, Activity, Feature)
-        dato<-arrange (dato, Sj_Id, Activity, Feature)
+        datMelt$SjId <- as.numeric(datMelt$SjId)
+        datMelt$Activity <- as.factor(datMelt$Activity)
+        dato<-group_by (datMelt, SjId, Activity, Feature)
+        dato<-arrange (dato, SjId, Activity, Feature)
         final<-summarise_each(dato, funs(mean))
         #Create table document
         write.table(final, file="Tidy Data Set.txt", row.names=FALSE, col.names=TRUE)
